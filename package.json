@@ -9,6 +9,7 @@
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "test:report": "playwright show-report",
+    "docs:screenshots": "playwright test && playwright test -c playwright.readme.config.ts",
     "api": "node api/server.js"
   },
   "keywords": [],

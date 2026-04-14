@@ -4,6 +4,20 @@
 
 **Разработчик проекта: [Space108] — AI Developer & AI Full-stack Quality**
 
+## Скриншоты
+
+Локальный API в браузере, пример JSON и фрагмент HTML-отчёта Playwright после полного прогона.
+
+Обновить картинки: **`npm run docs:screenshots`** (сначала полный `npm test` внутри скрипта, затем съёмка).
+
+| GET `/health` | GET `/api/users` |
+|---------------|------------------|
+| ![Локальный health-check](docs/readme/01-local-health.png) | ![Список пользователей API](docs/readme/02-api-users-json.png) |
+
+Фрагмент отчёта:
+
+![HTML-отчёт Playwright](docs/readme/03-playwright-report.png)
+
 ## Требования
 
 - Node.js 18+
@@ -61,6 +75,7 @@ npm test
 7. **API + БД** — сценарии из `tests/DBMaster/database.test.ts`: CRUD, пустая таблица после удаления, негативы (null, длина строки, SQL-инъекция как литерал).
 8. **Внешние API** — `tests/catalog-cart-auth.spec.ts` и `tests/first-api.spec.ts` требуют **интернет** (dummyjson, jsonplaceholder).
 9. **Артефакты** — при падении: `test-results/bug-reports/*.md`, вложения в HTML-отчёте, `trace.zip` для воспроизведения.
+10. **Скриншоты в README (по желанию)** — после смены UI/отчёта: `npm run docs:screenshots`.
 
 ### Как смотреть процесс «вживую»
 

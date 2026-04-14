@@ -9,6 +9,7 @@ const isCI = !!process.env.CI;
 
 export default defineConfig({
   testDir: './tests',
+  testIgnore: ['**/readme-screenshots.spec.ts'],
   outputDir: 'test-results',
   fullyParallel: true,
   forbidOnly: isCI,
