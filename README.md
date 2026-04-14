@@ -99,20 +99,25 @@ Playwright поднимает API через `webServer` в `playwright.config.t
 | `APICENTER_PORT` | Порт локального API (по умолчанию `3847`) |
 | `CI` | Включает `forbidOnly` и retries в Playwright |
 
-## Публикация на GitHub
+## Репозиторий
 
-Локально (один раз):
+Проект на GitHub: **[github.com/Space108/ApiMaster](https://github.com/Space108/ApiMaster)**
+
+Клонирование:
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit: APIMASTER"
-git branch -M main
-git remote add origin https://github.com/<ВАШ_ЛОГИН>/ApiMaster.git
-git push -u origin main
+git clone https://github.com/Space108/ApiMaster.git
+cd ApiMaster
+npm install
 ```
 
-Создай пустой репозиторий на GitHub (без README, если уже есть свой), подставь URL в `origin`, затем `git push`.
+Дальнейшие изменения:
+
+```bash
+git add .
+git commit -m "Описание изменений"
+git push origin main
+```
 
 ---
 
